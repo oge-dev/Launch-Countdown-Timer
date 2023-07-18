@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TempoKeeper</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TEMPOKEEPER</h1>
+    </header>
+    <main>
+      <section class="date-time">
+        <h2>CURRENT DATE AND TIME:</h2>
+        <div class="clock">
+          <span id="hrs"></span>
+        </div>
+      </section>
+
+      <section class="stopwatch">
+        <h2>Stop Watch</h2>
+        <div class="container">
+          <div class="parameters">
+            <label id="hours">00</label>
+            <label id="boubleDots">:</label>
+            <label id="minutes">00</label>
+            <label id="boubleDots">:</label>
+            <label id="seconds">00</label>
+            <br />
+            <button class="btn" type="button" id="start">Start</button>
+            <button class="btn" type="button" id="stopTimer">Stop</button>
+            <button class="btn" type="button" id="reset">Reset</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
