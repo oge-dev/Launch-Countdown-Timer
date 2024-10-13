@@ -105,7 +105,8 @@ footer {
   bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  width: 100%;
 
   .social-icons {
     // Using mixin to center social-icons within footer
@@ -124,8 +125,8 @@ footer {
   }
 }
 // media query for responsive design on diferent screen size
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -140,8 +141,19 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  footer {
+    height: 140px;
+    background-position: 82% 18%;
+
+    .social-icons {
+      align-items: flex-end;
+      padding-bottom: 10px;
+      a {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
 }
-
-
-
-
