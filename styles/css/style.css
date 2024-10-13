@@ -6,69 +6,77 @@
 
 body {
   font-family: "Red Hat Text", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.countdown-container {
-  background: linear-gradient(to bottom, hsl(236, 21%, 26%), hsl(235, 16%, 14%), hsl(234, 17%, 12%)), url("../../images/bg-stars.svg") no-repeat center center fixed;
+  max-width: 100%;
+  background: linear-gradient(to bottom, hsl(236, 21%, 26%), hsl(235, 16%, 14%), hsl(234, 17%, 12%)), url("../../images/bg-stars.svg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-blend-mode: screen;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   color: hsl(0, 0%, 100%);
+  text-align: center;
+  height: 100vh;
 }
 
-.countdown-container h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+.countdown-section {
+  width: 100%;
 }
 
-.countdown {
+.countdown-content h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  padding: 3.5em 0;
+}
+
+.countdown-content .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.countdown .time-box span {
+.countdown-content .countdown .time-box span {
   background-color: hsl(236, 21%, 26%);
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px hsl(234, 17%, 12%);
-  font-size: 3rem;
-  color: hsl(345, 95%, 68%);
   display: block;
+  border-radius: 10px;
+  color: hsl(345, 95%, 68%);
+  box-shadow: 0 4px 10px hsl(234, 17%, 12%);
 }
-.countdown .time-box p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: hsl(237, 18%, 59%);
-}
-
-.social-icons {
-  position: fixed;
-  bottom: 0;
+footer {
   background: url("../../images/pattern-hills.svg");
-  width: 100%;
   height: 180px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.social-icons .icons {
+footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   height: 100%;
+  gap: 20px;
 }
-.social-icons .icons a {
+footer .social-icons a {
   text-decoration: none;
 }
-.social-icons .icons a img {
+footer .social-icons a img {
   width: 30px;
   height: 30px;
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
 
 /*# sourceMappingURL=style.css.map */
