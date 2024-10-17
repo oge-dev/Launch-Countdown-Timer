@@ -6,6 +6,8 @@
 
 body {
   font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   max-width: 100%;
   background: linear-gradient(to bottom, hsl(236, 21%, 26%), hsl(235, 16%, 14%), hsl(234, 17%, 12%)), url("../../images/bg-stars.svg");
   background-size: cover;
@@ -24,29 +26,48 @@ body {
 
 .countdown-content h1 {
   text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.6em;
+  font-weight: 700;
   font-style: normal;
   line-height: 1.5;
-  letter-spacing: 5px;
-  word-spacing: 10px;
-  padding: 3.5em 0;
+  letter-spacing: 0.4em;
+  word-spacing: 0.5em;
+  padding: 3em 0;
 }
 
 .countdown-content .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
 }
 .countdown-content .countdown .time-box span {
   background-color: hsl(236, 21%, 26%);
-  padding: 20px;
+  padding: 0.1em 0.4em;
   display: block;
-  border-radius: 10px;
+  border-radius: 8px;
   color: hsl(345, 95%, 68%);
   box-shadow: 0 4px 10px hsl(234, 17%, 12%);
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
+.countdown-content .countdown .time-box p {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4em;
+  word-spacing: normal;
+  color: hsl(237, 18%, 59%);
+  margin-top: 1em;
+}
+
 footer {
   background: url("../../images/pattern-hills.svg");
   height: 180px;

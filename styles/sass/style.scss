@@ -45,6 +45,8 @@ $primary-font-Weight: 700;
 // style for the body of the webpage
 body {
   font-family: $primary-font-family;
+  font-size: $primary-font-size;
+  font-weight: $primary-font-Weight;
   max-width: 100%;
   background: linear-gradient(
       to bottom,
@@ -69,30 +71,32 @@ body {
 // styling for h1 element within the countdown-content classname
 .countdown-content h1 {
   // Using mixin to style h1 font
-  @include font-content(uppercase, 1.5em, 600, normal, 1.5, 5px, 10px);
-  padding: 3.5em 0;
+  @include font-content(uppercase, 1.6em, 700, normal, 1.5, 0.4em, 0.5em);
+  padding: 3em 0;
 }
 // styling for countdown classname within the countdown-content classname
 
 .countdown-content .countdown {
   // Using mixin to center content
   @include center-content;
-  gap: 20px;
+  gap: 28px;
 
   .time-box span {
     background-color: $Dark-desaturated-blue;
-    padding: 20px;
+    padding: 0.1em 0.4em;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
     color: $Soft-red;
     box-shadow: 0 4px 10px $Very-dark-blue-mostly-black;
     // Using mixin to style span font
-    // @include font-content(uppercase, 3.2em, 700, normal, 1.5, 5px, 10px);
+    @include font-content(uppercase, 5em, 700, normal, 1.5, normal, normal);
   }
 
   .time-box p {
     // Using mixin to style span font
-    // @include font-content(uppercase, 3.2em, 700, normal, 1.5, 5px, 10px);
+    @include font-content(uppercase, 1em, 700, normal, 1.5, 0.4em, normal);
+    color: $Grayish-blue;
+    margin-top: 1em;
   }
 }
 
