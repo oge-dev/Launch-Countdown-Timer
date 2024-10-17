@@ -62,13 +62,15 @@ body {
   background-blend-mode: screen;
   color: $White;
   text-align: center;
-  height: 80vh;
-  // Using mixin to center content
-  @include center-content;
+  height: 100vh;
 }
 // styling for countdown section area within the body
 .countdown-section {
   width: 100%;
+  
+  // Using mixin to center content
+  @include center-content;
+  height: 70vh;
 }
 // styling for h1 element within the countdown-content classname
 .countdown-content h1 {
@@ -91,7 +93,7 @@ body {
     color: $Soft-red;
     box-shadow: 0 4px 10px $Very-dark-blue-mostly-black;
     // Using mixin to style span font
-    @include font-content(uppercase, 5em, 700, normal, 1.5, normal, normal);
+    @include font-content(uppercase, 5.5em, 700, normal, 1.5, normal, normal);
   }
 
   .time-box p {
