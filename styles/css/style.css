@@ -85,7 +85,7 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 20px;
+  gap: 28px;
 }
 footer .social-icons a {
   text-decoration: none;
@@ -94,23 +94,90 @@ footer .social-icons a svg {
   width: 30px;
   height: 30px;
 }
-footer .social-icons a svg path:hover {
+footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
   fill: hsl(345, 95%, 68%);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and down) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
+@media (max-width: 992px) and (min-width: 601px) {
+  .countdown-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .countdown-content h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+  }
+  .countdown-content .countdown .time-box span {
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 3.8em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  .countdown-content .countdown .time-box p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4em;
+    word-spacing: normal;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .countdown-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .countdown-content h1 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+    padding: 4em 0;
+  }
+  .countdown-content .countdown {
+    gap: 18px;
+  }
+  .countdown-content .countdown .time-box span {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 2.1em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  .countdown-content .countdown .time-box p {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.4em;
+    word-spacing: normal;
+  }
   footer {
-    height: 140px;
+    height: 150px;
     background-position: 82% 18%;
   }
   footer .social-icons {
     align-items: flex-end;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
   }
   footer .social-icons a img {
     width: 25px;

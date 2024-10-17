@@ -116,7 +116,7 @@ footer {
     // Using mixin to center social-icons within footer
     @include center-content;
     height: 100%;
-    gap: 20px;
+    gap: 28px;
 
     a {
       text-decoration: none;
@@ -125,7 +125,7 @@ footer {
         width: 30px;
         height: 30px;
         path {
-          &:hover {
+          &:hover, &:focus {
             fill: $Soft-red;
           }
         }
@@ -133,30 +133,69 @@ footer {
     }
   }
 }
-// media query for responsive design on diferent screen size
-/* Extra large devices (large laptops and desktops, 1200px and down) */
-@media only screen and (max-width: 1200px) {
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
+@media (max-width: 992px) and (min-width: 601px) {
+  // styling for countdown section area within the body
+  .countdown-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  // styling for h1 element within the countdown-content classname
+  .countdown-content h1 {
+    // Using mixin to style h1 font
+    @include font-content(uppercase, 1.5em, 700, normal, 1.5, 0.4em, 0.5em);
+  }
+  // styling for countdown classname within the countdown-content classname
+
+  .countdown-content .countdown {
+    .time-box span {
+      border-radius: 6px;
+      @include font-content(uppercase, 3.8em, 700, normal, 1.5, normal, normal);
+    }
+
+    .time-box p {
+      // Using mixin to style span font
+      @include font-content(uppercase, 0.8em, 700, normal, 1.5, 0.4em, normal);
+    }
+  }
+  
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  // styling for countdown section area within the body
+  .countdown-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  // styling for h1 element within the countdown-content classname
+  .countdown-content h1 {
+    // Using mixin to style h1 font
+    @include font-content(uppercase, 1em, 700, normal, 1.5, 0.4em, 0.5em);
+    padding: 4em 0;
+  }
+  // styling for countdown classname within the countdown-content classname
+
+  .countdown-content .countdown {
+    gap: 18px;
+    .time-box span {
+      border-radius: 4px;
+      @include font-content(uppercase, 2.1em, 700, normal, 1.5, normal, normal);
+    }
+
+    .time-box p {
+      // Using mixin to style span font
+      @include font-content(uppercase, 0.5em, 700, normal, 1.5, 0.4em, normal);
+    }
+  }
   footer {
-    height: 140px;
+    height: 150px;
     background-position: 82% 18%;
 
     .social-icons {
       align-items: flex-end;
-      padding-bottom: 10px;
+      padding-bottom: 18px;
       a {
         img {
           width: 25px;
