@@ -17,7 +17,10 @@ body {
   background-blend-mode: screen;
   color: hsl(0, 0%, 100%);
   text-align: center;
-  height: 100vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .countdown-section {
@@ -32,7 +35,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.4em;
   word-spacing: 0.5em;
-  padding: 3em 0;
+  padding: 0 0 3em;
 }
 
 .countdown-content .countdown {
@@ -147,7 +150,7 @@ footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
     line-height: 1.5;
     letter-spacing: 0.4em;
     word-spacing: 0.5em;
-    padding: 4em 0;
+    padding: 0 0 4em;
   }
   .countdown-content .countdown {
     gap: 18px;

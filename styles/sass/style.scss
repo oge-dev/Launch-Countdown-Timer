@@ -62,7 +62,9 @@ body {
   background-blend-mode: screen;
   color: $White;
   text-align: center;
-  height: 100vh;
+  height: 80vh;
+  // Using mixin to center content
+  @include center-content;
 }
 // styling for countdown section area within the body
 .countdown-section {
@@ -72,7 +74,7 @@ body {
 .countdown-content h1 {
   // Using mixin to style h1 font
   @include font-content(uppercase, 1.6em, 700, normal, 1.5, 0.4em, 0.5em);
-  padding: 3em 0;
+  padding: 0 0 3em;
 }
 // styling for countdown classname within the countdown-content classname
 
@@ -173,7 +175,7 @@ footer {
   .countdown-content h1 {
     // Using mixin to style h1 font
     @include font-content(uppercase, 1em, 700, normal, 1.5, 0.4em, 0.5em);
-    padding: 4em 0;
+    padding: 0 0 4em;
   }
   // styling for countdown classname within the countdown-content classname
 
