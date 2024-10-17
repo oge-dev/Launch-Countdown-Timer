@@ -76,7 +76,7 @@ body {
 .countdown-content h1 {
   // Using mixin to style h1 font
   @include font-content(uppercase, 1.6em, 700, normal, 1.5, 0.4em, 0.5em);
-  padding: 0 0 3em;
+  margin: 0 0 4em;
 }
 // styling for countdown classname within the countdown-content classname
 
@@ -177,7 +177,7 @@ footer {
   .countdown-content h1 {
     // Using mixin to style h1 font
     @include font-content(uppercase, 1em, 700, normal, 1.5, 0.4em, 0.5em);
-    padding: 0 0 4em;
+    margin: 0 0 4em;
   }
   // styling for countdown classname within the countdown-content classname
 
