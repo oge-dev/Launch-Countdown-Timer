@@ -121,9 +121,14 @@ footer {
     a {
       text-decoration: none;
 
-      img {
+      svg {
         width: 30px;
         height: 30px;
+        path {
+          &:hover {
+            fill: $Soft-red;
+          }
+        }
       }
     }
   }

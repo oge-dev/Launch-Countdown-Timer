@@ -90,9 +90,12 @@ footer .social-icons {
 footer .social-icons a {
   text-decoration: none;
 }
-footer .social-icons a img {
+footer .social-icons a svg {
   width: 30px;
   height: 30px;
+}
+footer .social-icons a svg path:hover {
+  fill: hsl(345, 95%, 68%);
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
