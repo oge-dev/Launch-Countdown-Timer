@@ -72,14 +72,14 @@ body {
 
 footer {
   background: url("../../images/pattern-hills.svg");
-  height: 180px;
+  height: 150px;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 0%;
   width: 100%;
 }
 footer .social-icons {
