@@ -45,12 +45,9 @@ $primary-font-Weight: 700;
 // style for the body of the webpage
 body {
   font-family: $primary-font-family;
-  font-size: $primary-font-size;
-  font-weight: $primary-font-Weight;
   max-width: 100%;
   background: linear-gradient(
       to bottom,
-      $Dark-desaturated-blue,
       $Very-dark-blue,
       $Very-dark-blue-mostly-black
     ),
@@ -73,7 +70,7 @@ body {
   height: 70vh;
 }
 // styling for h1 element within the countdown-content classname
-.countdown-content h1 {
+.countdown-content h2 {
   // Using mixin to style h1 font
   @include font-content(uppercase, 1.6em, 700, normal, 1.5, 0.4em, 0.5em);
   margin: 0 0 4em;
