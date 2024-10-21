@@ -1,6 +1,6 @@
 // Set the date for the launch (e.g., December 31, 2024)
-// let launchDate = new Date("Dec 31, 2024 00:00:00").getTime();
-let launchDate = new Date().getTime()+ (14 * 24 * 60 * 60 * 1000);
+let launchDate = new Date("Dec 31, 2024 00:00:00").getTime();
+// let launchDate = new Date().getTime()+ (14 * 24 * 60 * 60 * 1000);
 
 // Update the count down every 1 second
 let countdownInterval = setInterval(function() {

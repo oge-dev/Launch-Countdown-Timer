@@ -100,25 +100,17 @@ footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
   fill: hsl(345, 95%, 68%);
 }
 
-/* Add this new style for the LAUNCHED! message */
 .launched-message {
   font-size: 5rem;
   color: hsl(345, 95%, 68%); /* Bright orange color */
   font-weight: bold;
   text-transform: uppercase;
-  animation: blink 1s infinite; /* Make it blink */
+  animation: blinker 1s infinite; /* Make it blink */
 }
 
-/* Optional: Create a blinking effect for the LAUNCHED! text */
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
+@keyframes blinker {
   50% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
@@ -155,6 +147,9 @@ footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
     letter-spacing: 0.4em;
     word-spacing: normal;
   }
+  .launched-message {
+    font-size: 3.8rem;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -176,6 +171,7 @@ footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
     gap: 18px;
   }
   .countdown-content .countdown .time-box span {
+    padding: 0.1em 0.3em;
     border-radius: 4px;
     text-transform: uppercase;
     font-size: 2.1em;
@@ -205,6 +201,9 @@ footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
   footer .social-icons a img {
     width: 25px;
     height: 25px;
+  }
+  .launched-message {
+    font-size: 2.1rem;
   }
 }
 
