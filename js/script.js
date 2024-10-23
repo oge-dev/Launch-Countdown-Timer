@@ -1,8 +1,9 @@
-const countDown = () => {
-  // Set the date for the launch (e.g., October 12, 2024)
-  let launchDate = new Date("oct 12, 2024 00:00:00").getTime();
-  // // let launchDate = new Date().getTime()+ (14 * 24 * 60 * 60 * 1000);
+// Set the date for the launch (e.g., October 12, 2024)
+// let launchDate = new Date("Dec 31, 2024 00:00:00").getTime();
+let launchDate = new Date().getTime() + 14 * 24 * 60 * 60 * 1000; // start the count at 14 days
 
+// countDown function
+const countDown = () => {
   // Get the current date
   let currentDate = new Date().getTime();
 

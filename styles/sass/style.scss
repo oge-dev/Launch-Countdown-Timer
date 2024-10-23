@@ -62,7 +62,7 @@ main {
   text-align: center;
   padding-inline: 1rem;
   max-width: 1400px;
-  // styling for countdown-section class name within main elements
+  // styling for countdown-section class name within main tag
   .countdown-section {
     height: 70vh;
 
@@ -88,7 +88,7 @@ main {
         margin-bottom: 1.3rem;
         h2 {
           color: $Soft-red;
-          // Using mixin to style h1 font
+          // Using mixin to style h2 font
           @include font-content(uppercase, 5rem, 700, normal, normal);
           line-height: 128px;
           position: relative;
@@ -128,13 +128,13 @@ main {
         background-color: $Very-dark-blue;
       }
       p {
-        // Using mixin to style h1 font
+        // Using mixin to style p font
         @include font-content(uppercase, 1rem, 500, 0.4rem, normal);
         color: $Grayish-blue;
       }
     }
   }
-  // styling for footer within main elements
+  // styling for footer within main
   footer {
     background-image: url("../../images/pattern-hills.svg");
     background-repeat: no-repeat;
@@ -165,8 +165,8 @@ main {
 
 /* Add this new style for the LAUNCHED! message */
 .launched-message {
-  color: $Soft-red; /* Bright orange color */
-  // Using mixin to style h1 font
+  color: $Soft-red;
+  // Using mixin to style launched-message font
   @include font-content(uppercase, 5rem, 700, normal, normal);
   animation: blinker 1s infinite; /* Make it blink */
 }
@@ -178,12 +178,10 @@ main {
 
 // media query
 
-// /* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
+/* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
 @media (max-width: 992px) and (min-width: 601px) {
   main {
     max-width: 768px;
-    // width: 80%;
-    //     margin: 0 auto;
     .countdown-section {
       h1 {
         // Using mixin to style h1 font
@@ -198,6 +196,7 @@ main {
           width: 102px;
           h2 {
             line-height: 102px;
+            // Using mixin to style h2 font
             @include font-content(uppercase, 3.8rem, 700, normal, normal);
           }
           h2::before {
@@ -210,20 +209,20 @@ main {
           }
         }
         p {
-          // Using mixin to style h1 font
+          // Using mixin to style p font
           @include font-content(uppercase, 0.8rem, 700, 0.6rem, normal);
         }
       }
     }
   }
 
-    .launched-message {
-       // Using mixin to style h1 font
-  @include font-content(uppercase, 3.8rem, 700, normal, normal);
-    }
+  .launched-message {
+    // Using mixin to style launched-message font
+    @include font-content(uppercase, 3.8rem, 700, normal, normal);
+  }
 }
 
-// /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   main {
     max-width: 375px;
@@ -255,7 +254,7 @@ main {
           }
         }
         p {
-          // Using mixin to style h1 font
+          // Using mixin to style p font
           @include font-content(uppercase, 0.6rem, 500, 0.6rem, normal);
         }
       }
@@ -268,8 +267,8 @@ main {
     }
   }
 
-    .launched-message {
-         // Using mixin to style h1 font
-  @include font-content(uppercase, 1.6rem, 700, normal, normal);
-    }
+  .launched-message {
+    // Using mixin to style launched-message font
+    @include font-content(uppercase, 1.6rem, 700, normal, normal);
+  }
 }
