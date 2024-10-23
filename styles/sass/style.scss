@@ -31,7 +31,7 @@ $primary-font-Weight: 700;
   $size,
   $weight,
   $wordSpacing,
-  $letterSpacing,
+  $letterSpacing
 ) {
   text-transform: $textTransform;
   font-size: $size;
@@ -62,7 +62,7 @@ main {
   text-align: center;
   padding-inline: 1rem;
   max-width: 1400px;
-   // styling for countdown-section class name within main elements
+  // styling for countdown-section class name within main elements
   .countdown-section {
     height: 70vh;
 
@@ -163,24 +163,18 @@ main {
   }
 }
 
-// // /* Add this new style for the LAUNCHED! message */
-// .launched-message {
-//   font-size: 5rem;
-//   color: $Soft-red;  /* Bright orange color */
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   animation: blinker 1s infinite;  /* Make it blink */
-// }
-// @keyframes blinker {
-//   50% {
-//     opacity: 0;
-//   }
-// }
-
-
-
-
-
+/* Add this new style for the LAUNCHED! message */
+.launched-message {
+  color: $Soft-red; /* Bright orange color */
+  // Using mixin to style h1 font
+  @include font-content(uppercase, 5rem, 700, normal, normal);
+  animation: blinker 1s infinite; /* Make it blink */
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
 // media query
 
@@ -223,9 +217,10 @@ main {
     }
   }
 
-  //   .launched-message {
-  //     font-size: 3.8rem;
-  //   }
+    .launched-message {
+       // Using mixin to style h1 font
+  @include font-content(uppercase, 3.8rem, 700, normal, normal);
+    }
 }
 
 // /* Extra small devices (phones, 600px and down) */
@@ -245,7 +240,7 @@ main {
         .time {
           height: 55px;
           width: 55px;
-          margin-bottom: .6rem;
+          margin-bottom: 0.6rem;
           h2 {
             line-height: 55px;
             @include font-content(uppercase, 1.6rem, 700, normal, normal);
@@ -273,9 +268,8 @@ main {
     }
   }
 
-  //   .launched-message {
-  //     font-size: 2.1rem;
-  //   }
+    .launched-message {
+         // Using mixin to style h1 font
+  @include font-content(uppercase, 1.6rem, 700, normal, normal);
+    }
 }
-
-

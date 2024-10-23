@@ -137,6 +137,22 @@ main footer .social-icons a:hover {
   transform: translateY(-5px);
 }
 
+/* Add this new style for the LAUNCHED! message */
+.launched-message {
+  color: hsl(345, 95%, 68%); /* Bright orange color */
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  word-spacing: normal;
+  letter-spacing: normal;
+  animation: blinker 1s infinite; /* Make it blink */
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 @media (max-width: 992px) and (min-width: 601px) {
   main {
     max-width: 768px;
@@ -176,6 +192,13 @@ main footer .social-icons a:hover {
     font-size: 0.8rem;
     font-weight: 700;
     word-spacing: 0.6rem;
+    letter-spacing: normal;
+  }
+  .launched-message {
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    font-weight: 700;
+    word-spacing: normal;
     letter-spacing: normal;
   }
 }
@@ -227,6 +250,13 @@ main footer .social-icons a:hover {
   }
   main footer .social-icons {
     margin-top: 20px;
+  }
+  .launched-message {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    word-spacing: normal;
+    letter-spacing: normal;
   }
 }
 
