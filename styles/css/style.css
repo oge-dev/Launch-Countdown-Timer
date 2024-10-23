@@ -4,206 +4,227 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Red Hat Text", sans-serif;
-  max-width: 100%;
-  background: linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(234, 17%, 12%)), url("../../images/bg-stars.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-blend-mode: screen;
-  color: hsl(0, 0%, 100%);
-  text-align: center;
-  height: 100vh;
-}
-
-.countdown-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-
-.countdown-content h1 {
-  text-transform: uppercase;
-  font-size: 1.6em;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.4em;
-  word-spacing: 0.5em;
-  margin: 0 0 4em;
-}
-
-.countdown-content .countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-}
-.countdown-content .countdown .time-box span {
-  background-color: hsl(236, 21%, 26%);
-  padding: 0.1em 0.4em;
-  display: block;
-  border-radius: 8px;
-  color: hsl(345, 95%, 68%);
-  box-shadow: 0 4px 10px hsl(234, 17%, 12%);
-  text-transform: uppercase;
-  font-size: 5.5em;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-.countdown-content .countdown .time-box p {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.4em;
-  word-spacing: normal;
-  color: hsl(237, 18%, 59%);
-  margin-top: 1em;
-}
-
-footer {
-  background: url("../../images/pattern-hills.svg");
-  height: 150px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  width: 100%;
-}
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  gap: 28px;
-}
-footer .social-icons a {
+a {
   text-decoration: none;
 }
-footer .social-icons a svg {
-  width: 30px;
-  height: 30px;
-}
-footer .social-icons a svg path:hover, footer .social-icons a svg path:focus {
-  fill: hsl(345, 95%, 68%);
+
+li {
+  list-style: none;
 }
 
-.launched-message {
-  font-size: 5rem;
-  color: hsl(345, 95%, 68%); /* Bright orange color */
-  font-weight: bold;
+body {
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom, hsl(235, 16%, 14%), hsl(234, 17%, 12%)), url("../../images/bg-stars.svg");
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  max-width: 1400px;
+}
+main .countdown-section {
+  height: 70vh;
+}
+main .countdown-section h1 {
   text-transform: uppercase;
-  animation: blinker 1s infinite; /* Make it blink */
+  font-size: 1.6rem;
+  font-weight: 700;
+  word-spacing: 0.4rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 4rem;
+}
+main .countdown-section .countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .countdown-section .countdown .time-box:not(:last-child) {
+  margin-right: 3rem;
+}
+main .countdown-section .countdown .time {
+  position: relative;
+  background-color: hsl(236, 21%, 26%);
+  height: 128px;
+  width: 128px;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px hsl(234, 17%, 12%);
+  margin-bottom: 1.3rem;
+}
+main .countdown-section .countdown .time h2 {
+  color: hsl(345, 95%, 68%);
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  word-spacing: normal;
+  letter-spacing: normal;
+  line-height: 128px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+main .countdown-section .countdown .time h2::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: -5px;
+  height: 12px;
+  width: 12px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  z-index: 1;
+}
+main .countdown-section .countdown .time h2::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  right: -5px;
+  height: 12px;
+  width: 12px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  z-index: 1;
+}
+main .countdown-section .countdown .time::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: hsl(234, 17%, 12%);
+}
+main .countdown-section .countdown p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  word-spacing: 0.4rem;
+  letter-spacing: normal;
+  color: hsl(237, 18%, 59%);
+}
+main footer {
+  background-image: url("../../images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25%;
+  width: 100%;
+}
+main footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+main footer .social-icons a {
+  color: hsl(237, 18%, 59%);
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+main footer .social-icons a:hover {
+  color: hsl(345, 95%, 68%);
+  transform: translateY(-5px);
 }
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-/* Medium devices (landscape tablets, portrait tablets and large phones, 601px and upto 992px) */
 @media (max-width: 992px) and (min-width: 601px) {
-  .countdown-section {
-    width: 80%;
-    margin: 0 auto;
+  main {
+    max-width: 768px;
   }
-  .countdown-content h1 {
+  main .countdown-section h1 {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.4em;
-    word-spacing: 0.5em;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.5rem;
   }
-  .countdown-content .countdown .time-box span {
-    border-radius: 6px;
+  main .countdown-section .countdown .time-box:not(:last-child) {
+    margin-right: 1rem;
+  }
+  main .countdown-section .countdown .time {
+    height: 102px;
+    width: 102px;
+  }
+  main .countdown-section .countdown .time h2 {
+    line-height: 102px;
     text-transform: uppercase;
-    font-size: 3.8em;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    word-spacing: normal;
-  }
-  .countdown-content .countdown .time-box p {
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.4em;
-    word-spacing: normal;
-  }
-  .launched-message {
     font-size: 3.8rem;
+    font-weight: 700;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  main .countdown-section .countdown .time h2::before {
+    height: 10px;
+    width: 10px;
+  }
+  main .countdown-section .countdown .time h2::after {
+    height: 10px;
+    width: 10px;
+  }
+  main .countdown-section .countdown p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    word-spacing: 0.6rem;
+    letter-spacing: normal;
   }
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .countdown-section {
-    width: 80%;
-    margin: 0 auto;
+  main {
+    max-width: 375px;
   }
-  .countdown-content h1 {
+  main .countdown-section h1 {
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
-    font-style: normal;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.5rem;
     line-height: 1.5;
-    letter-spacing: 0.4em;
-    word-spacing: 0.5em;
-    margin: 0 0 4em;
   }
-  .countdown-content .countdown {
-    gap: 18px;
+  main .countdown-section .countdown .time-box:not(:last-child) {
+    margin-right: 1rem;
   }
-  .countdown-content .countdown .time-box span {
-    padding: 0.1em 0.3em;
-    border-radius: 4px;
+  main .countdown-section .countdown .time {
+    height: 55px;
+    width: 55px;
+  }
+  main .countdown-section .countdown .time h2 {
+    line-height: 55px;
     text-transform: uppercase;
-    font-size: 2.1em;
+    font-size: 1.6rem;
     font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
+    word-spacing: normal;
     letter-spacing: normal;
-    word-spacing: normal;
   }
-  .countdown-content .countdown .time-box p {
+  main .countdown-section .countdown .time h2::before {
+    height: 7px;
+    width: 7px;
+  }
+  main .countdown-section .countdown .time h2::after {
+    height: 7px;
+    width: 7px;
+  }
+  main .countdown-section .countdown p {
     text-transform: uppercase;
-    font-size: 0.5em;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.4em;
-    word-spacing: normal;
+    font-size: 0.6rem;
+    font-weight: 500;
+    word-spacing: 0.6rem;
+    letter-spacing: normal;
   }
-  footer {
-    height: 150px;
+  main footer {
     background-position: 82% 18%;
   }
-  footer .social-icons {
-    align-items: flex-end;
-    padding-bottom: 18px;
-  }
-  footer .social-icons a img {
-    width: 25px;
-    height: 25px;
-  }
-  .launched-message {
-    font-size: 2.1rem;
+  main footer .social-icons {
+    margin-top: 20px;
   }
 }
 
