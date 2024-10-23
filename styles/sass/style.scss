@@ -1,9 +1,3 @@
-// Global reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 // Variables for reusable values
 // Primary colors
 $Grayish-blue: hsl(237, 18%, 59%);
@@ -17,6 +11,14 @@ $Very-dark-blue: hsl(234, 17%, 12%);
 $primary-font-size: 14px;
 $primary-font-family: "Red Hat Text", sans-serif;
 $primary-font-Weight: 700;
+
+// Global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 // Mixin for centering content
 @mixin center-content {
   display: flex;
@@ -58,10 +60,9 @@ body {
 }
 main {
   text-align: center;
-  // padding-inline: 1rem;
-  // padding: 1rem;
+  padding-inline: 1rem;
   max-width: 1400px;
-  //   width: 100%;
+   // styling for countdown-section class name within main elements
   .countdown-section {
     height: 70vh;
 
@@ -133,6 +134,7 @@ main {
       }
     }
   }
+  // styling for footer within main elements
   footer {
     background-image: url("../../images/pattern-hills.svg");
     background-repeat: no-repeat;
@@ -230,8 +232,6 @@ main {
 @media only screen and (max-width: 600px) {
   main {
     max-width: 375px;
-    // width: 80%;
-    //     margin: 0 auto;
     .countdown-section {
       h1 {
         // Using mixin to style h1 font
@@ -245,6 +245,7 @@ main {
         .time {
           height: 55px;
           width: 55px;
+          margin-bottom: .6rem;
           h2 {
             line-height: 55px;
             @include font-content(uppercase, 1.6rem, 700, normal, normal);
