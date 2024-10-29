@@ -1,6 +1,3 @@
-Here's a more professional version of your `README.md` file:
-
-```markdown
 # Frontend Mentor - Launch Countdown Timer Solution
 
 This repository contains my solution to the [Launch Countdown Timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Completing this challenge has strengthened my skills in creating interactive UI components with JavaScript and styling with SCSS.
@@ -26,9 +23,9 @@ The Launch Countdown Timer project is a dynamic web component where users can ob
 ![Desktop Design Preview](./design/desktop-design.jpg)
 
 ### Requirements
-- A live countdown timer that starts at 14 days and updates every second.
-- Hover effects on all interactive elements.
-- **Bonus**: Implement a flip animation for the timer cards when the numbers change.
+- See a live countdown timer that ticks down every second (start the count at 14 days)
+- See hover states for all interactive elements on the page
+- **Bonus**: When a number changes, make the card flip from the middle
 
 ## Solution
 
@@ -53,10 +50,26 @@ Working on this project enhanced my understanding of:
 Here’s an example of the SCSS mixin and nesting structure used in this project:
 
 ```scss
+$White: hsl(0, 0%, 100%);
+$Grayish-blue: hsl(237, 18%, 59%);
+$Soft-red: hsl(345, 95%, 68%);
 @mixin center-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin font-content(
+  $textTransform,
+  $size,
+  $weight,
+  $wordSpacing,
+  $letterSpacing
+) {
+  text-transform: $textTransform;
+  font-size: $size;
+  font-weight: $weight;
+  word-spacing: $wordSpacing;
+  letter-spacing: $letterSpacing;
 }
 
 body {
