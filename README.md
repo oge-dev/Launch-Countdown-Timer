@@ -40,9 +40,9 @@ Users should be able to:
 
 ### What I learned
 
-[SASS](https://sass-lang.com/) - CSS Extension
 
 ```css
+/* content properties */
 h2 {
   line-height: 128px;
   position: relative;
@@ -147,11 +147,14 @@ Implement on an already existing website
 
 ### Useful resources
 
-- [SASS web](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. This helped me in order to avoid redundancy. I really liked this pattern and will use it going forward.
-- [SASS W3school](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [SASS](https://sass-lang.com/) - Sass helped me in order to avoid redundancy. I really liked this pattern and will use it going forward.
+- [CSS content Property](https://www.w3schools.com/cssref/pr_gen_content.php) - This is an amazing website(w3schools) which helped me finally understand content property. I'd recommend it to anyone still learning this concept.
+- [How TO - JavaScript Countdown Timer](https://www.w3schools.com/howto/howto_js_countdown.asp) - This is an amazing website(w3schools) which helped me to Learn how to create a countdown timer with JavaScript. I'd recommend it to anyone still learning this concept.
+- [How TO - JavaScript Countdown Timer](https://codewithcurious.com/projects/countdown-timer-using-html-css-javascript/) - This is an amazing article which helped me finally understand Countdown Timer Using HTML , CSS & JavaScript. I'd recommend it to anyone still learning this concept.
+
 
 ## Author
 
-- Website - [Oge](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Oge](https://uhegbu-ogechi-juliet.vercel.app/)
+- Frontend Mentor - [@oge-dev](https://www.frontendmentor.io/profile/oge-dev)
+- Twitter - [@oge_dev](https://x.com/oge_dev)
