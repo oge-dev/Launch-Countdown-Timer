@@ -112,6 +112,6 @@ To further develop this project, I plan to:
 
 ## Author
 
-- **Portfolio** - [Oge's Portfolio](https://uhegbu-ogechi-juliet.vercel.app/)
+- **Portfolio** - [Oge](https://uhegbu-ogechi-juliet.vercel.app/)
 - **Frontend Mentor** - [@oge-dev](https://www.frontendmentor.io/profile/oge-dev)
 - **Twitter** - [@oge_dev](https://x.com/oge_dev)
